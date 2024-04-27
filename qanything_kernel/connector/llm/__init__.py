@@ -4,3 +4,4 @@ if platform.system() == "Linux":
 elif platform.system() == "Darwin":
     from .llm_for_llamacpp import LlamaCPPCustomLLM
 from .llm_for_openai_api import OpenAILLM
+from .llm_for_qwen_api import QwenLLM

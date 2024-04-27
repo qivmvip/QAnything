@@ -21,12 +21,14 @@ system=""
 milvus_port=19530
 qanything_port=8777
 model_size="7B"
-use_cpu=false
+use_cpu=true
 use_openai_api=false
 openai_api_base="https://api.openai.com/v1"
 openai_api_key=""
 openai_api_model_name="gpt-3.5-turbo-1106"
 openai_api_context_length="4096"
+
+openai_api_key=""
 
 # 使用getopts解析命令行参数
 while getopts ":s:m:q:M:cob:k:n:l:w:" opt; do
