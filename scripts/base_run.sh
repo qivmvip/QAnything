@@ -118,7 +118,7 @@ echo "CUDA_VISIBLE_DEVICES=0 python3 -m qanything_kernel.qanything_server.sanic_
 
 sleep 5
 # 启动qanything-server服务
-CUDA_VISIBLE_DEVICES=0 python3 -m qanything_kernel.qanything_server.sanic_api --host 0.0.0.0 --port $qanything_port --model_size $model_size \
+CUDA_VISIBLE_DEVICES=0 python3 -m qanything_kernel.qanything_server.sanic_api_qtom_macos --host 0.0.0.0 --port $qanything_port --model_size $model_size \
     $use_cpu_option $use_openai_api_option \
     ${openai_api_base:+--openai_api_base "$openai_api_base"} \
     ${openai_api_key:+--openai_api_key "$openai_api_key"} \
