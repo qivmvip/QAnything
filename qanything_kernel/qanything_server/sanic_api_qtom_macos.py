@@ -79,7 +79,7 @@ model_download_params = None
 debug_logger.info(f'使用openai api {args.openai_api_model_name} 无需下载大模型')
 
 from .handler import *
-from qanything_kernel.core.local_doc_qa import LocalDocQA
+from qanything_kernel.core.local_doc_qa_qatom_macos import LocalDocQA
 
 WorkerManager.THRESHOLD = 6000
 
